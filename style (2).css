@@ -1,0 +1,93 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.image {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #00f2fe;
+}
+
+/* Page layout */
+.body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+    color: #4facfe;
+    
+}
+
+/* Game container */
+.game-container {
+    width: 90%;
+    max-width: 360px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+/* Hover (desktop only) */
+@media (hover: hover) {
+    button:hover {
+        transform:rotate(3deg) scale(1.05);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+    }
+}
+.butto:hover {
+    transform:rotate(-3deg) scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+/* Active (touch friendly) */
+button:active {
+    transform: scale(0.96);
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+    .game-container {
+        padding: 16px;
+    }
+    button {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    .game-container {
+        max-width: 420px;
+        padding: 28px;
+    }
+    button {
+        font-size: 1.1rem;
+        padding: 16px;
+    }
+}

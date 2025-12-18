@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/trophy.png" type="image/x-icon">
+    <link rel="stylesheet" href="/html/scrol.css">
+    <title>Rock-Paper and Scissor</title>
+</head>
+<body>
+    <section class="body">
+    <div class="heading">
+    <h1>Rock-Paper-Scissor <br> Game</h1>
+    <p>Click on any button to play <br>the game against the computer!</p></div>
+    <div class="game-container">
+    <button onclick="
+   finalresult('Rock');
+        ">Rock</button>
+    <button class="butto" onclick="
+   finalresult('Paper');
+    ">Paper</button>
+    <button onclick="
+    finalresult('Scissor');
+    ">Scissor</button>
+    <button  class="butto" onclick="
+    mainresult.wins=0; mainresult.losses=0; mainresult.ties=0;
+    localStorage.removeItem('mainresult');
+    alert('Scores have been reset!');
+    ">Reset score</button>
+    </div>
+    </section>
+</body>
+<script src="/html/script.js">
+</script>
+</html>
