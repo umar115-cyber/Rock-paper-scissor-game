@@ -200,5 +200,19 @@ body{
     flex-wrap: wrap;
     line-height: 20px;
 }
+    .para div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 180px;
+    height: 50px;
+
+    border-radius: 32px;
+
+    font-weight: bold;
+    font-size: 28px;
+
+}
     
 }
